@@ -10,6 +10,9 @@ a{
   display: flex;
   justify-content: center;
 } */
+.header_item_parent{
+  border-bottom: 1px solid black;
+}
 .header_item {
   width: 1100px;
   display: flex;
@@ -38,47 +41,111 @@ a{
 .header_item ul li:first-child::after{
   display: none;
 }
+
 .header_main{
   width: 1100px;
-  background-color: gray;
   margin: 0 auto;
   display: flex;
   position: relative;
   justify-content: space-between;
 }
+.header_main img.health_left{
+  width: 215px;
+  height: 53px;
+  margin: auto 0;
+}
+
 .header_main .search_center{
   display: flex;
   position: relative;
   flex-wrap: wrap;
+  width: 416px;
 }
 .header_main .search_center_text{
-  width: 416px;
+  width: 100%;
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-}
+  margin-top: 15px;
+} 
 .header_main .search_center_text input{
-  position: absolute;
-  width: 416px;
+  border: 2px solid black;
+  width: 100%;
   padding: 10px;
+  position: absolute;
 }
 .header_main .search_center_text img{
-  position: absolute;
   top: 3px;
   right: 0;
-  margin: auto;
+  position: absolute;
 }
 .header_main ul.search_center_sub{
   display: flex;
   font-size: 10px;
-  padding: 5px;
   position: relative;
+  margin-top: 5px;
 }
-.header_main .search_center_sub a+a {
-  margin-left: 15px;
+.header_main .search_center_sub li+li {
+  margin-left: 10px;
 }
-.header_main .search_center_sub ul li::after{
+.header_main .search_center_sub a::after{
+  position: absolute;
   content: "";
-  width: 5px;
+  width: 1px;
   height: 10px;
+  background-color: grey;
+  margin-left: 4px;
+}
+.header_main .search_center_sub li:last-child a::after{
+  display: none;
+}
+
+.header_category{
+  width: 100%;
+  height: 48px;
   background-color: black;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+}
+.header_category ul{
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+}
+.header_category ul li{
+  margin: auto;
+  position: relative;
+  /* display: flex; */
+}
+/* .header_category ul li::before{
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 48px;
+  margin: auto;
+} */
+.header_category ul li a{
+  color: white;
+}
+.header_category .btn-hamburger{
+  font-size: 20px;  
+  color: white;
+}
+.header_category .category:hover + .sub_menu{
+  display: block;
+}
+.header_category .sub_menu{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  display: none;
+  width: 100%;
+  font-size: 13px;
+  margin-top: 11px;
+  border: 3px solid black;
+}
+.header_category .sub_menu a{
+  color: black;
+  padding: 11px;
 }
