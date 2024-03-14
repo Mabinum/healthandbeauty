@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 a{
   display: block;
@@ -10,6 +11,15 @@ a{
   display: flex;
   justify-content: center;
 } */
+header ul.header_top {
+  width: 100%;
+}
+header .header_top li{
+  width: 1920px;
+  margin: 0 auto; 
+} 
+
+
 .header_item_parent{
   border-bottom: 1px solid black;
 }
@@ -160,10 +170,6 @@ a{
   overflow: hidden;
   transition: height 0.4s;
 }
-.screen.hide {
-  /* display: none;  */
-  height: 0;
-}
 .screen .swiper{
   /* 이미지(819px) 슬라이드 3개 + 사이 여백(10px) 2개 = 2477px */
   /* width: 2477px; */
@@ -174,23 +180,10 @@ a{
   flex-shrink: 0;
   /* Flex.Item 인 .swiper가 2477px을 유지하기 위해 감소 너비 비율을 0으로 */
 }
-
 .screen .swiper-slide {
   transition: opacity 1s;
   position: relative;
 }
-.screen .swiper-slide-active {
-  /* 모든 슬라이드를 반투명하게, active 한 것만 불투명하게 */
-  opacity: 1;
-}
-/* .screen .swiper-slide .btn {
-  position: absolute;
-  bottom: 0;
-  Quiz: absolute 요소의 수평 가운데 배치
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-} */
 .screen .swiper-pagination{
   position: absolute;
   bottom: 40px;
@@ -199,7 +192,6 @@ a{
   */
   z-index:1;
 }
-
 .screen .swiper-pagination .swiper-pagination-bullet{
   /* 기존 배경색은 투명하게 숨기고, 배경 이미지를 사용 */
   background-color: transparent;
@@ -223,16 +215,6 @@ a{
   color: #333;
   transition: 0.5s;
 }
-/* .screen .swiper-button-prev{
-  가운데로 몰아넣고 마진으로 위치 조정 */
-  /* left: 50%; */
-  /* margin-left: -480px;
-}
-.screen .swiper-button-next{
-  가운데로 몰아넣고 마진으로 위치 조정
-  right: 50%;
-  margin-right: -480px;
-} */
 .screen .swiper-button-prev:hover,
 .screen .swiper-button-next:hover{
   background-color: #333;
@@ -241,4 +223,25 @@ a{
 .screen .swiper-button-next::after,
 .screen .swiper-button-prev::after{
   display: none;
+}
+
+
+
+/* YOUTUBE */
+.img_youtube {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+.img_youtube .pick_img img{
+  width: 533px;
+}
+.img_youtube h3 {
+  padding: 30px 0px;
+}
+.img_youtube .youtube__area{
+  width: 533px;
+  margin-left: 15px;
 }
