@@ -4,10 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- main.js 연결 -->
   <script defer src="./main.js"></script>
+  <!-- main.css 연결 -->
   <link defer rel="stylesheet" href="/main.css">
+  <!-- 스타일 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <!-- 구글 아이콘 -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
   <header>
@@ -73,10 +82,86 @@
       </ul>
     </div>
   </header>
-  <!-- <section class="screen">
-    <img src="" alt="" class="screen">
-    <div class="page_bar"></div>
+  
+  <!-- SCREEN -->
+  <section class="screen">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <a href="javascript:void(0)" class="btn">
+            <img src="./image/room2_main_pc.jpg" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="javascript:void(0)" class="btn">
+            <img src="/image/seodong_main_pc.jpg" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="javascript:void(0)" class="btn">
+            <img src="/image/currybob_main_pc.jpg" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="javascript:void(0)" class="btn">
+            <img src="/image/main_gola.jpg" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="javascript:void(0)" class="btn">
+            <img src="/image/main_wellb.jpg" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="javascript:void(0)" class="btn">
+            <img src="/image/main_bio.jpg" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="javascript:void(0)" class="btn">
+            <img src="/image/main_shower.jpg" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="javascript:void(0)" class="btn">
+            <img src="/image/main_soft3.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev">
+      <span class="material-icons">arrow_back_ios</span>
+    </div>
+    <div class="swiper-button-next">
+      <span class="material-icons">arrow_forward_ios</span>
+    </div>
   </section>
+
+  <!-- YOUTUBE -->
+  <section class="youtube">
+    <!-- 영상이 출력될 영역 -->
+    <div class="youtube__area">
+      <!-- 실제 영상이 재생될 요소 -->
+      <div id="player">
+
+      </div>
+    </div>
+    <!-- 섹션 전체를 덮을 커버 요소 -->
+    <div class="youtube__cover"></div>
+
+    <div class="inner">
+      <img src="./images/floating1.png" alt="" class="floating1">
+      <img src="./images/floating2.png" alt="" class="floating2">
+      <!-- <img src="./images/floating3.png" alt="" class="floating3"> -->
+    </div>
+  </section>
+  
+  <!--
   <section class="img_youtube">
     <div class="pick_img">
       <div></div>
