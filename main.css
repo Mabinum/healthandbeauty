@@ -356,4 +356,15 @@ header .header_top li{
 }
 
 
+/* 원하는대로 원하는만큼 구매주소 링크 이미지 */
+.wishimg{
+  width: 100%;
+}
+.wishimg .wishimg_centerpurpose{
+  width: 1920px;
+  margin: 200px auto;
+}
+
+
+/* 전제품 */
 
