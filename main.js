@@ -26,16 +26,16 @@ const screenEl = document.querySelector('.screen');
 const itemRecommand = document.querySelector('.todayitem_subtitle_recommand');
 const itemNewitem = document.querySelector('.todayitem_subtitle_newitem');
 const itemBest = document.querySelector('.todayitem_subtitle_best');
-const itemRecommands = document.querySelector('.todayitem_subtitle_recommand.active');
-const itemNewitems = document.querySelector('.todayitem_subtitle_newitem.active');
-const itemBests = document.querySelector('.todayitem_subtitle_best.active');
+// const itemRecommands = document.querySelector('.todayitem_subtitle_recommand.active');
+// const itemNewitems = document.querySelector('.todayitem_subtitle_newitem.active');
+// const itemBests = document.querySelector('.todayitem_subtitle_best.active');
 const titleRecommand = document.querySelector('.recommand');
 const titleNewitem = document.querySelector('.newitem');
 const titleBest = document.querySelector('.best');
 
 titleRecommand.addEventListener('click',function(){
-  itemNewitems.classList.remove('active');
-  itemBests.classList.remove('active');
+  itemNewitem.classList.remove('active');
+  itemBest.classList.remove('active');
   if (itemRecommand.classList.contains('active')) {
     
   } else {
@@ -43,8 +43,8 @@ titleRecommand.addEventListener('click',function(){
   }
 });
 titleNewitem.addEventListener('click',function(){
-  itemNewitems.classList.remove('active');
-  itemBests.classList.remove('active');
+  itemRecommand.classList.remove('active');
+  itemBest.classList.remove('active');
   if (itemNewitem.classList.contains('active')) {
     
   } else {
@@ -52,8 +52,8 @@ titleNewitem.addEventListener('click',function(){
   }
 });
 titleBest.addEventListener('click',function(){
-  itemNewitems.classList.remove('active');
-  itemRecommands.classList.remove('active');
+  itemNewitem.classList.remove('active');
+  itemRecommand.classList.remove('active'); 
   if (itemBest.classList.contains('active')) {
     
   } else {

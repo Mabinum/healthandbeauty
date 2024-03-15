@@ -293,12 +293,15 @@ header .header_top li{
   margin: 15px auto;
   font-size: 12px;
 }
-
-
-
-.todayitem_subtitle_parent{
+.flexpurpose{
   display: flex;
+}
+.todayitem_subtitle_parent{
   margin-top: 25px;
+}
+.todayitem_subtitle_best,
+.todayitem_subtitle_newitem,
+.todayitem_subtitle_recommand{
   display: none;
 }
 .todayitem_subtitle{
@@ -351,5 +354,6 @@ header .header_top li{
 .todayitem_subtitle_recommand.active{
   display: block;
 }
+
 
 
