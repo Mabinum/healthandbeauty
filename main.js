@@ -22,3 +22,42 @@ new Swiper('.screen .swiper', {
 // 프로모션 섹션 토글 기능
 const screenEl = document.querySelector('.screen');
 
+// TODAY 추천상품
+const itemRecommand = document.querySelector('.todayitem_subtitle_recommand');
+const itemNewitem = document.querySelector('.todayitem_subtitle_newitem');
+const itemBest = document.querySelector('.todayitem_subtitle_best');
+const itemRecommands = document.querySelector('.todayitem_subtitle_recommand.active');
+const itemNewitems = document.querySelector('.todayitem_subtitle_newitem.active');
+const itemBests = document.querySelector('.todayitem_subtitle_best.active');
+const titleRecommand = document.querySelector('.recommand');
+const titleNewitem = document.querySelector('.newitem');
+const titleBest = document.querySelector('.best');
+
+titleRecommand.addEventListener('click',function(){
+  itemNewitems.classList.remove('active');
+  itemBests.classList.remove('active');
+  if (itemRecommand.classList.contains('active')) {
+    
+  } else {
+    itemRecommand.classList.add('active');
+  }
+});
+titleNewitem.addEventListener('click',function(){
+  itemNewitems.classList.remove('active');
+  itemBests.classList.remove('active');
+  if (itemNewitem.classList.contains('active')) {
+    
+  } else {
+    itemNewitem.classList.add('active');
+  }
+});
+titleBest.addEventListener('click',function(){
+  itemNewitems.classList.remove('active');
+  itemRecommands.classList.remove('active');
+  if (itemBest.classList.contains('active')) {
+    
+  } else {
+    itemBest.classList.add('active');
+  }
+});
+
