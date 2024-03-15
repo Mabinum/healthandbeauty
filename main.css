@@ -396,6 +396,7 @@ header .header_top li{
 }
 .eti_main_container_right{
   width: 770px;
+  padding: 20px;
 }
 .left_sub_container_top{
   padding: 15px;
@@ -408,3 +409,24 @@ header .header_top li{
   left: -14px;
 }
 /* 위의 이미지 어떻게하면 정렬가능할지 여쭤보기 */
+.row_flex{
+  display: flex;
+  padding: 23px;
+}
+.row_flex > li img{
+  width: 110px;
+  height: 110px;
+}
+.row_flex > ul {
+  margin-left: 23px;
+}
+.eti_main_container_right .eti_sale ul{
+  width: 33.33%;
+}
+.eti_sale{
+  margin-top: 15px;
+  display: flex;
+}
+.right_sub_container_top{
+  display: flex;
+}
