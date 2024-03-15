@@ -1,3 +1,7 @@
+html{
+  --border: 1px solid black;
+}
+
 *{
   box-sizing: border-box;
 }
@@ -308,27 +312,27 @@ header .header_top li{
   width: 33.33%;
   padding: 20px;
 }
-.todayitem_subtitle .item_brand{
+.item_brand{
   font-size: 12px;
   font-weight: bold;
   color: #888;
   margin:5px 0;
   overflow: hidden;
 }
-.todayitem_subtitle .item_name{
+.item_name{
   color: #222;
   font-size: 15px;
   font-weight: bold;
   margin:10px 0;
   overflow: hidden;
 }
-.todayitem_subtitle .item_ingredient{
+.item_ingredient{
   color: #999;
   font-size: 12px;
   overflow: hidden;
   margin: 5px 0;
 }
-.todayitem_subtitle li:last-child{
+.sale{
   border-top: 1px solid grey;
   margin: 10px 0;
   padding-top: 15px;
@@ -367,4 +371,40 @@ header .header_top li{
 
 
 /* 전제품 */
-
+.etis{
+  width: 1100px;
+  margin: 0 auto;
+}
+#eti{
+  width: 100%
+}
+.eti_name{
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid grey;
+}
+.eti_main_container{
+  display: flex;
+  padding: 15px 0;
+}
+.eti_main_container_left{
+  width: 330px;
+}
+.eti_main_container_right{
+  width: 770px;
+}
+.left_sub_container_top{
+  padding: 15px;
+  border: var(--border);
+  overflow: hidden;
+}
+.left_sub_container_top_img{
+  position: relative;
+  top: -14px;
+  left: -14px;
+}
+/* 위의 이미지 어떻게하면 정렬가능할지 여쭤보기 */
