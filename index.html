@@ -13,20 +13,21 @@
   <!-- main.js 연결 -->
   <script defer src="./JS/main.js"></script>
   <script defer src="./JS/youtube.js"></script>
-  <!-- main.css 연결 -->
-  <link defer rel="stylesheet" href="./css/main.css">
-  <!-- 스타일 초기화 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
-  <!-- 구글 아이콘 -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <!-- ScrollToPlugin -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- ScrollMagic-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- SWIPER CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <!-- SWIPER JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- main.css 연결 -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- 스타일 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <!-- 구글 아이콘 -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
   <!-- 헤더라인 -->
@@ -192,7 +193,7 @@
       <h1>TODAY 추천상품</h1>
       <h3>고객님을 위한 헬뷰의 특별한 제안</h3>
     </div>
-    <nav>
+    <div class="todayitem_container">
       <div class="todayitem_left">
 
         <div class="todayitem_title_parent">
@@ -384,7 +385,7 @@
           <li><img src="./image/right_ban01.png" alt=""></li>
         </ul>
       </div>
-    </nav>
+    </div class="todayitem_container">
   </section>
 
   <!-- 원하는대로 원하는만큼 구매주소 링크 이미지-->
@@ -425,8 +426,8 @@
                 <li class="item_name"><h1>헬스앤뷰티 전제품 골라담기</h1></li>
                 <li class="item_ingredient"><h5>뭘 좋아하실지 몰라 다~준비해 봤습니다!</h5></li>
                 <li class="sale" style="position: relative;">
-                  <div class="sale_price">다 준비한만큼 1억원</div>
-                  <div class="sale_etc" style="position: absolute; right: 0;;">
+                  <div class="sale_price">800원</div>
+                  <div class="sale_etc" style="position: absolute; right: 0;">
                     <img src="./image/pro_cart.gif" alt="">
                     <img src="./image/pro_zoom.gif" alt="">
                   </div>
@@ -441,8 +442,8 @@
                 <li class="item_brand"><h4>헬스앤뷰티</h4></li>
                 <li class="item_name" style="font-size: 12px;"><h1>웰베이커리/먹고 반할 번/프로틴 치아바타/엄지붕어빵 1팩 골라담기</h1></li>
                 <li class="sale" style="position: relative;">
-                  <div class="sale_price">꽁짜~</div>
-                  <div class="sale_etc" style="position: absolute; right: 0;;">
+                  <div class="sale_price">5,200원</div>
+                  <div class="sale_etc" style="position: absolute; right: 0;">
                     <img src="./image/pro_cart.gif" alt="">
                     <img src="./image/pro_zoom.gif" alt="">
                   </div>
@@ -455,10 +456,10 @@
               <li><img src="./image/1000001625_main_07.jpg" alt=""></li>
               <ul>
                 <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                <li class="item_name" style="font-size: 12px;"><h1>웰베이커리/먹고 반할 번/프로틴 치아바타/엄지붕어빵 1팩 골라담기</h1></li>
+                <li class="item_name" style="font-size: 12px;"><h1>치킨/소시지/스테이크/볼/탕수닭 1팩 골라담기</h1></li>
                 <li class="sale" style="position: relative;">
-                  <div class="sale_price">꽁짜~</div>
-                  <div class="sale_etc" style="position: absolute; right: 0;;">
+                  <div class="sale_price">1,200원</div>
+                  <div class="sale_etc" style="position: absolute; right: 0;">
                     <img src="./image/pro_cart.gif" alt="">
                     <img src="./image/pro_zoom.gif" alt="">
                   </div>
@@ -476,7 +477,7 @@
                   <li class="item_brand"><h4>헬스앤뷰티</h4></li>
                   <li class="item_name"><h1>간식 골라담기</h1></li>
                   <li class="sale">
-                    <div class="sale_price">꽁짜~</div>
+                    <div class="sale_price">1,600원</div>
                     <div class="sale_etc">
                       <img src="./image/pro_cart.gif" alt="">
                       <img src="./image/pro_zoom.gif" alt="">
@@ -486,13 +487,13 @@
               </div>
             </div>
             <div class="right_sub_container_top_width33">
-              <a href="javascript:void(0)"><img src="/image/1000001624_add4_077.jpg" alt=""></a>
+              <a href="javascript:void(0)"><img src="/image/1000001623_add4_028.jpg" alt=""></a>
               <div class="eti_sale">
                 <ul>
                   <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                  <li class="item_name"><h1>간식 골라담기</h1></li>
+                  <li class="item_name"><h1>볶음밥 1팩 골라담기</h1></li>
                   <li class="sale">
-                    <div class="sale_price">꽁짜~</div>
+                    <div class="sale_price">4,400원</div>
                     <div class="sale_etc">
                       <img src="./image/pro_cart.gif" alt="">
                       <img src="./image/pro_zoom.gif" alt="">
@@ -502,13 +503,13 @@
               </div>
             </div>
             <div class="right_sub_container_top_width33">
-              <a href="javascript:void(0)"><img src="/image/1000001624_add4_077.jpg" alt=""></a>
+              <a href="javascript:void(0)"><img src="/image/1000001622_add4_085.jpg" alt=""></a>
               <div class="eti_sale">
                 <ul>
                   <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                  <li class="item_name"><h1>간식 골라담기</h1></li>
+                  <li class="item_name"><h1>닭가슴살/안심닭 1팩 골라담기</h1></li>
                   <li class="sale">
-                    <div class="sale_price">꽁짜~</div>
+                    <div class="sale_price">600원</div>
                     <div class="sale_etc">
                       <img src="./image/pro_cart.gif" alt="">
                       <img src="./image/pro_zoom.gif" alt="">
@@ -520,13 +521,13 @@
           </div>
           <div class="right_sub_container_bottom">
             <div class="right_sub_container_top_width33">
-              <a href="javascript:void(0)"><img src="/image/1000001624_add4_077.jpg" alt=""></a>
+              <a href="javascript:void(0)"><img src="/image/1000001209_add4_081.jpg" alt=""></a>
               <div class="eti_sale">
                 <ul>
                   <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                  <li class="item_name"><h1>간식 골라담기</h1></li>
+                  <li class="item_name"><h1>헬뷰 닭가슴살 패키지</h1></li>
                   <li class="sale">
-                    <div class="sale_price">꽁짜~</div>
+                    <div class="sale_price">40,500원</div>
                     <div class="sale_etc">
                       <img src="./image/pro_cart.gif" alt="">
                       <img src="./image/pro_zoom.gif" alt="">
@@ -536,13 +537,13 @@
               </div>
             </div>
             <div class="right_sub_container_top_width33">
-              <a href="javascript:void(0)"><img src="/image/1000001624_add4_077.jpg" alt=""></a>
+              <a href="javascript:void(0)"><img src="/image/1000000214_add4_048.jpg" alt=""></a>
               <div class="eti_sale">
                 <ul>
                   <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                  <li class="item_name"><h1>간식 골라담기</h1></li>
+                  <li class="item_name"><h1>헬뷰 베스트 패키지</h1></li>
                   <li class="sale">
-                    <div class="sale_price">꽁짜~</div>
+                    <div class="sale_price">42,150원</div>
                     <div class="sale_etc">
                       <img src="./image/pro_cart.gif" alt="">
                       <img src="./image/pro_zoom.gif" alt="">
@@ -552,13 +553,13 @@
               </div>
             </div>
             <div class="right_sub_container_top_width33">
-              <a href="javascript:void(0)"><img src="/image/1000001624_add4_077.jpg" alt=""></a>
+              <a href="javascript:void(0)"><img src="/image/1000000392_add4_086.jpg" alt=""></a>
               <div class="eti_sale">
                 <ul>
                   <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                  <li class="item_name"><h1>간식 골라담기</h1></li>
+                  <li class="item_name"><h1>스테이크 패키지</h1></li>
                   <li class="sale">
-                    <div class="sale_price">꽁짜~</div>
+                    <div class="sale_price">18,000원</div>
                     <div class="sale_etc">
                       <img src="./image/pro_cart.gif" alt="">
                       <img src="./image/pro_zoom.gif" alt="">
