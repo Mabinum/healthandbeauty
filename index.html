@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- GSAP -->
+  <!-- 순서 주의(main.js에서 사용하니깐 더 앞에) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
+  integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer"></script>
   <!-- main.js 연결 -->
-  <script defer src="./main.js"></script>
-  <script defer src="./youtube.js"></script>
+  <script defer src="./JS/main.js"></script>
+  <script defer src="./JS/youtube.js"></script>
   <!-- main.css 연결 -->
-  <link defer rel="stylesheet" href="/main.css">
+  <link defer rel="stylesheet" href="./css/main.css">
   <!-- 스타일 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
   <!-- 구글 아이콘 -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-
+  <!-- ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- SWIPER CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <!-- SWIPER JS -->
@@ -164,6 +173,16 @@
       <h3>든든함과 단백질 듬뿍! 웰베이커리🤍</h3>
       <!-- 실제 영상이 재생될 요소 -->
       <div id="player"></div>
+    </div>
+
+    <!-- 오른쪽 고정 배지 -->
+    <div class="badge_fix"> 
+      <div class="badge">
+        <a href="javascript:void(0)"><img src="./image/fix_slide01.jpg" alt=""></a>
+        <a href="javascript:void(0)"><img src="./image/fix_slide05.jpg" alt=""></a>
+        <a href="javascript:void(0)"><img src="./image/fix_slide06.jpg" alt=""></a>
+        <a href="javascript:void(0)"><img src="./image/fix_slide07.jpg" alt=""></a>
+      </div>
     </div>
   </section>
 
@@ -375,6 +394,7 @@
     </div>
   </section>
 
+  
   <!-- 전제품 -->
   <!-- eti = everythingitem -->
   <section class="etis">
@@ -383,12 +403,20 @@
         <h1>전제품</h1>
         <img src="/image/btn_more.gif" alt="">
       </div>
-
       <div class="eti_main_container">
-
+        
         <div class="eti_main_container_left">
           <div>
             <div>
+              <!-- 사이드바 -->
+              <div id="sidebar_fix">
+                <div id="sidebar">
+                  <a href="#eti">전제품</a>
+                  <a href="#bakery">빵</a>
+                  <a href="#solder">닭가슴살</a>
+                  <a href="#chicken">치킨</a>
+                </div>
+              </div>
               <ul class="left_sub_container_top">
                 <li class="left_sub_container_top_img">
                   <img src="/image/1000001910_add2_083.jpg" alt="">
@@ -439,12 +467,11 @@
             </ul>
           </div>
         </div>
-
         <div class="eti_main_container_right">
           <div class="right_sub_container_top">
-            <div>
+            <div class="right_sub_container_top_width33">
               <a href="javascript:void(0)"><img src="/image/1000001624_add4_077.jpg" alt=""></a>
-              <ul class="eti_sale">
+              <div class="eti_sale">
                 <ul>
                   <li class="item_brand"><h4>헬스앤뷰티</h4></li>
                   <li class="item_name"><h1>간식 골라담기</h1></li>
@@ -456,11 +483,11 @@
                     </div>
                   </li>
                 </ul>
-              </ul>
+              </div>
             </div>
-            <div>
+            <div class="right_sub_container_top_width33">
               <a href="javascript:void(0)"><img src="/image/1000001624_add4_077.jpg" alt=""></a>
-              <ul class="eti_sale">
+              <div class="eti_sale">
                 <ul>
                   <li class="item_brand"><h4>헬스앤뷰티</h4></li>
                   <li class="item_name"><h1>간식 골라담기</h1></li>
@@ -472,11 +499,11 @@
                     </div>
                   </li>
                 </ul>
-              </ul>
+              </div>
             </div>
-            <div>
+            <div class="right_sub_container_top_width33">
               <a href="javascript:void(0)"><img src="/image/1000001624_add4_077.jpg" alt=""></a>
-              <ul class="eti_sale">
+              <div class="eti_sale">
                 <ul>
                   <li class="item_brand"><h4>헬스앤뷰티</h4></li>
                   <li class="item_name"><h1>간식 골라담기</h1></li>
@@ -488,13 +515,230 @@
                     </div>
                   </li>
                 </ul>
-              </ul>
+              </div>
             </div>
           </div>
           <div class="right_sub_container_bottom">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="right_sub_container_top_width33">
+              <a href="javascript:void(0)"><img src="/image/1000001624_add4_077.jpg" alt=""></a>
+              <div class="eti_sale">
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name"><h1>간식 골라담기</h1></li>
+                  <li class="sale">
+                    <div class="sale_price">꽁짜~</div>
+                    <div class="sale_etc">
+                      <img src="./image/pro_cart.gif" alt="">
+                      <img src="./image/pro_zoom.gif" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right_sub_container_top_width33">
+              <a href="javascript:void(0)"><img src="/image/1000001624_add4_077.jpg" alt=""></a>
+              <div class="eti_sale">
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name"><h1>간식 골라담기</h1></li>
+                  <li class="sale">
+                    <div class="sale_price">꽁짜~</div>
+                    <div class="sale_etc">
+                      <img src="./image/pro_cart.gif" alt="">
+                      <img src="./image/pro_zoom.gif" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right_sub_container_top_width33">
+              <a href="javascript:void(0)"><img src="/image/1000001624_add4_077.jpg" alt=""></a>
+              <div class="eti_sale">
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name"><h1>간식 골라담기</h1></li>
+                  <li class="sale">
+                    <div class="sale_price">꽁짜~</div>
+                    <div class="sale_etc">
+                      <img src="./image/pro_cart.gif" alt="">
+                      <img src="./image/pro_zoom.gif" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 빵 -->
+    <div id="bakery">
+      <div class="eti_name">
+        <h1>빵</h1>
+        <img src="/image/btn_more.gif" alt="">
+      </div>
+      <div class="eti_main_container">
+        <div class="eti_main_container_left">
+          <div>
+            <div>
+              <ul class="left_sub_container_top">
+                <li class="left_sub_container_top_img">
+                  <img src="/image/1000002246_add2_067.jpg" alt="">
+                </li>
+                <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                <li class="item_name"><h1>단백질 번</h1></li>
+                <li class="item_ingredient"><h5>중량:1팩당 70g</h5></li>
+                <li class="sale" style="position: relative;">
+                  <div class="sale_price">1,900원</div>
+                  <div class="sale_etc" style="position: absolute; right: 0;;">
+                    <img src="./image/pro_cart.gif" alt="">
+                    <img src="./image/pro_zoom.gif" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <ul class="row_flex">
+              <li><img src="./image/1000001928_main_091.jpg" alt=""></li>
+              <ul>
+                <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                <li class="item_name" style="font-size: 12px;"><h1>웰베이커리/먹고 반할 번/프로틴 치아바타/엄지붕어빵 1팩 골라담기</h1></li>
+                <li class="sale" style="position: relative;">
+                  <div class="sale_price">꽁짜~</div>
+                  <div class="sale_etc" style="position: absolute; right: 0;;">
+                    <img src="./image/pro_cart.gif" alt="">
+                    <img src="./image/pro_zoom.gif" alt="">
+                  </div>
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div>
+            <ul class="row_flex">
+              <li><img src="./image/1000001625_main_07.jpg" alt=""></li>
+              <ul>
+                <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                <li class="item_name" style="font-size: 12px;"><h1>웰베이커리/먹고 반할 번/프로틴 치아바타/엄지붕어빵 1팩 골라담기</h1></li>
+                <li class="sale" style="position: relative;">
+                  <div class="sale_price">꽁짜~</div>
+                  <div class="sale_etc" style="position: absolute; right: 0;;">
+                    <img src="./image/pro_cart.gif" alt="">
+                    <img src="./image/pro_zoom.gif" alt="">
+                  </div>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+        <div class="eti_main_container_right">
+          <div class="right_sub_container_top">
+            <div class="right_sub_container_top_width33">
+              <a href="javascript:void(0)"><img src="/image/1000002088_add4_031.jpg" alt=""></a>
+              <div class="eti_sale">
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name"><h1>먹고 반할 번 에그마요</h1></li>
+                  <li class="item_ingredient"><h5>중량:1팩당 140g</h5></li>
+                  <li class="sale">
+                    <div class="sale_price">5,200원</div>
+                    <div class="sale_etc">
+                      <img src="./image/pro_cart.gif" alt="">
+                      <img src="./image/pro_zoom.gif" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right_sub_container_top_width33">
+              <a href="javascript:void(0)"><img src="/image/1000001924_add4_022.jpg" alt=""></a>
+              <div class="eti_sale">
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name"><h1>먹고 반할 번 토마토갈릭</h1></li>
+                  <li class="item_ingredient"><h5>중량:1팩당 140g</h5></li>
+                  <li class="sale">
+                    <div class="sale_price">5,200원</div>
+                    <div class="sale_etc">
+                      <img src="./image/pro_cart.gif" alt="">
+                      <img src="./image/pro_zoom.gif" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right_sub_container_top_width33">
+              <a href="javascript:void(0)"><img src="/image/1000001925_add4_074.jpg" alt=""></a>
+              <div class="eti_sale">
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name"><h1>먹고 반할 번 아보카도</h1></li>
+                  <li class="item_ingredient"><h5>중량:1팩당 140g</h5></li>
+                  <li class="sale">
+                    <div class="sale_price">5,200원</div>
+                    <div class="sale_etc">
+                      <img src="./image/pro_cart.gif" alt="">
+                      <img src="./image/pro_zoom.gif" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="right_sub_container_bottom">
+            <div class="right_sub_container_top_width33">
+              <a href="javascript:void(0)"><img src="/image/1000002167_add4_081.jpg" alt=""></a>
+              <div class="eti_sale">
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name"><h1>스노우 불고기</h1></li>
+                  <li class="item_ingredient"><h5>중량:1팩당 180g</h5></li>
+                  <li class="sale">
+                    <div class="sale_price">6,000원</div>
+                    <div class="sale_etc">
+                      <img src="./image/pro_cart.gif" alt="">
+                      <img src="./image/pro_zoom.gif" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right_sub_container_top_width33">
+              <a href="javascript:void(0)"><img src="/image/1000001896_add4_014.jpg" alt=""></a>
+              <div class="eti_sale">
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name"><h1>바질 치아바타</h1></li>
+                  <li class="item_ingredient"><h5>중량:1팩당 175g</h5></li>
+                  <li class="sale">
+                    <div class="sale_price">6,000원</div>
+                    <div class="sale_etc">
+                      <img src="./image/pro_cart.gif" alt="">
+                      <img src="./image/pro_zoom.gif" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right_sub_container_top_width33">
+              <a href="javascript:void(0)"><img src="/image/1000001895_add4_02.jpg" alt=""></a>
+              <div class="eti_sale">
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name"><h1>트러플 치아바타</h1></li>
+                  <li class="item_ingredient"><h5>중량:1팩당 175g</h5></li>
+                  <li class="sale">
+                    <div class="sale_price">6,000원</div>
+                    <div class="sale_etc">
+                      <img src="./image/pro_cart.gif" alt="">
+                      <img src="./image/pro_zoom.gif" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

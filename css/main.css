@@ -243,6 +243,7 @@ header .header_top li{
   font-size: 24px;
   font-weight: bold;
   margin-top: 100px;
+  position: relative;
 }
 .img_youtube .pick_img img{
   width: 533px;
@@ -254,6 +255,16 @@ header .header_top li{
   width: 533px;
   margin-left: 15px;
 }
+
+/* 오른쪽 고정 배지 */
+.badge_fix.{
+  position: relative;
+}
+.badge{
+  position: absolute;
+  right: -660px;
+}
+
 
 /* TODAY 추천상품 */
 .todayitem{
@@ -389,10 +400,12 @@ header .header_top li{
 }
 .eti_main_container{
   display: flex;
+  position: relative;
   padding: 15px 0;
 }
 .eti_main_container_left{
   width: 330px;
+  position: relative;
 }
 .eti_main_container_right{
   width: 770px;
@@ -420,13 +433,54 @@ header .header_top li{
 .row_flex > ul {
   margin-left: 23px;
 }
-.eti_main_container_right .eti_sale ul{
+/* .eti_main_container_right .eti_sale ul{
   width: 33.33%;
-}
+} */
 .eti_sale{
   margin-top: 15px;
   display: flex;
+  width: 100%;
+  position: relative;
 }
-.right_sub_container_top{
+.eti_sale ul{
+  width: 90%;
+} 
+.sale_etc{
   display: flex;
+  position: absolute;
+  right: 20px;
+  bottom: 13px;
+}
+.right_sub_container_top,
+.right_sub_container_bottom
+{
+  display: flex;
+}
+.right_sub_container_bottom{
+  margin-top: 70px;
+}
+.right_sub_container_top_width33{
+  width: 33.33%;
+}
+
+/* 빵 */
+#bakery{
+  margin-top: 200px;
+}
+
+/* 사이드바 */
+#sidebar_fix{
+  position: relative;
+}
+#sidebar{
+  position: absolute;
+  left: -150px;
+}
+#sidebar a{
+  width: 100px;
+  text-align: center;
+  border: 1px solid cyan;
+  margin: 5px;
+  padding: 10px;
+  background-color: lightcyan;
 }

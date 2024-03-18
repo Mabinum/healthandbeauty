@@ -61,3 +61,26 @@ titleBest.addEventListener('click',function(){
   }
 });
 
+const sidebarFixed = document.querySelector('#sidebar_fix');
+window.addEventListener('scroll',function(){
+  console.log(window.scrollY)
+  if (window.scrollY >= 2800){
+    sidebarFixed.style.position = 'fixed';
+    sidebarFixed.style.top = '30px';
+  } else {
+    sidebarFixed.style.position = 'absolute';
+  }
+});
+const badgeFixed = document.querySelector('.badge_fix');
+window.addEventListener('scroll',function(){
+  console.log(window.scrollY)
+  if (window.scrollY >= 700){
+    badgeFixed.style.position = 'fixed';
+    badgeFixed.style.top = '30px';
+  } else {
+    badgeFixed.style.position = 'absolute';
+  }
+});
+
+
+
