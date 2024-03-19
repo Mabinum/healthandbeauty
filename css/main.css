@@ -16,10 +16,10 @@ a{
 } */
 
 /* Close 이미지라인 */
-header ul.header_top {
+header header_top {
   width: 100%;
 }
-header .header_top li{
+header .header_top a{
   max-width: 1920px;
   overflow: hidden;
   margin: 0 auto; 
@@ -170,6 +170,12 @@ header .header_top li{
   padding: 11px;
 }
 
+/* 톡상담 */
+.kakaotalk_consult{
+  position: fixed;
+  bottom: 30px;
+  right: 150px;
+}
 
 /* Screen */
 .screen {
@@ -349,6 +355,7 @@ header .header_top li{
   margin: 10px 0;
   padding-top: 15px;
   display: flex;
+  position: relative;
 }
 .sale_text{
   background-color: limegreen;
@@ -358,12 +365,16 @@ header .header_top li{
 }
 .sale_price{
   width: 60%;
+  margin-left: 7px;
 }
 .sale_price_cost{
   font-size: 12px;
+  text-decoration: line-through;
+  color: gray;
 }
 .sale_price_salecost{
   font-size: 17px;
+  font-weight: bold;
 }
 .todayitem_subtitle_best.active,
 .todayitem_subtitle_newitem.active,
@@ -450,8 +461,8 @@ header .header_top li{
 .sale_etc{
   display: flex;
   position: absolute;
-  right: 20px;
-  bottom: 13px;
+  right: 0;
+  bottom: 6px;
 }
 .right_sub_container_top,
 .right_sub_container_bottom
@@ -465,8 +476,8 @@ header .header_top li{
   width: 33.33%;
 }
 
-/* 빵 */
-#bakery{
+/* 빵,닭가슴살,*/
+#bakery,#chicken_breast,#sausage{
   margin-top: 200px;
 }
 
