@@ -142,10 +142,15 @@ header .header_top .material-icons{
   width: 1100px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: relative; */
 }
-.header_category ul li{
-  margin: auto;
+.header_category > ul >li{
+  /* padding: auto; */
   position: relative;
+  margin: auto;
+  /* width: 100%; */
   /* display: flex; */
 }
 .header_category ul li a{
