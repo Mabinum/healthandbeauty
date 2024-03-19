@@ -16,14 +16,24 @@ a{
 } */
 
 /* Close 이미지라인 */
-header header_top {
+header .header_top {
   width: 100%;
+  display: flex;
+  position: relative;
 }
 header .header_top a{
   max-width: 1920px;
   overflow: hidden;
   margin: 0 auto; 
+  /* position: absolute; */
 } 
+header .header_top .material-icons{
+  position: absolute;
+  right: -70px;
+  font-size: 40px;
+  color: wheat;
+  cursor: pointer;
+}
 
 /* 위의 상단 버튼라인 */
 .header_item_parent{
@@ -78,6 +88,7 @@ header .header_top a{
   position: relative;
   flex-wrap: wrap;
   width: 416px;
+  margin: 10px;
 }
 .header_main .search_center_text{
   width: 100%;
@@ -100,7 +111,7 @@ header .header_top a{
   display: flex;
   font-size: 10px;
   position: relative;
-  margin-top: 5px;
+  margin-top: 30px;
 }
 .header_main .search_center_sub li+li {
   margin-left: 10px;
@@ -137,13 +148,6 @@ header .header_top a{
   position: relative;
   /* display: flex; */
 }
-/* .header_category ul li::before{
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 48px;
-  margin: auto;
-} */
 .header_category ul li a{
   color: white;
 }
@@ -151,23 +155,23 @@ header .header_top a{
   font-size: 20px;  
   color: white;
 }
-.header_category .category:hover + .sub_menu{
+.header_category ul:first-child:hover .sub_menu{
   display: block;
+  z-index: 100;
 }
 .header_category .sub_menu{
-  display: flex;
-  flex-direction: column;
   position: absolute;
   background-color: white;
   display: none;
   width: 100%;
   font-size: 13px;
-  margin-top: 11px;
+  /* margin-top: 11px; */
   border: 3px solid black;
 }
 .header_category .sub_menu a{
   color: black;
-  padding: 11px;
+  padding: 15px;
+  z-index: 200;
 }
 
 /* 톡상담 */

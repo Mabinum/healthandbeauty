@@ -63,7 +63,6 @@ titleBest.addEventListener('click',function(){
 
 const sidebarFixed = document.querySelector('#sidebar_fix');
 window.addEventListener('scroll',function(){
-  console.log(window.scrollY)
   if (window.scrollY >= 2800){
     sidebarFixed.style.position = 'fixed';
     sidebarFixed.style.top = '30px';
@@ -73,7 +72,6 @@ window.addEventListener('scroll',function(){
 });
 const badgeFixed = document.querySelector('.badge_fix');
 window.addEventListener('scroll',function(){
-  console.log(window.scrollY)
   if (window.scrollY >= 700){
     badgeFixed.style.position = 'fixed';
     badgeFixed.style.top = '30px';
@@ -84,8 +82,8 @@ window.addEventListener('scroll',function(){
 
 const notices = document.querySelector('.notice_event_title_notice');
 const events = document.querySelector('.notice_event_title_event');
-const notice = document.querySelector('.notice_event_content_notice')
-const eventc = document.querySelector('.notice_event_content_event')
+const notice = document.querySelector('.notice_event_content_notice');
+const eventc = document.querySelector('.notice_event_content_event');
 notices.addEventListener('click',function(){
   eventc.classList.remove('active');
   notice.classList.add('active');
@@ -95,5 +93,11 @@ events.addEventListener('click',function(){
   eventc.classList.add('active');
 });
 
-
+const headerClose = document.querySelector('.header_top > .material-icons');
+const headerHead = document.querySelector('.header_top');
+headerClose.addEventListener('click',function(){
+  // console.log(headerHead);
+  headerHead.style.display = 'none';
+  headerClose.style.display = 'none';
+});
 
