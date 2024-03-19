@@ -82,5 +82,18 @@ window.addEventListener('scroll',function(){
   }
 });
 
+const notices = document.querySelector('.notice_event_title_notice');
+const events = document.querySelector('.notice_event_title_event');
+const notice = document.querySelector('.notice_event_content_notice')
+const eventc = document.querySelector('.notice_event_content_event')
+notices.addEventListener('click',function(){
+  eventc.classList.remove('active');
+  notice.classList.add('active');
+});
+events.addEventListener('click',function(){
+  notice.classList.remove('active');
+  eventc.classList.add('active');
+});
+
 
 
