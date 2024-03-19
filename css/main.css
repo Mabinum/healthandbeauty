@@ -155,7 +155,7 @@ header .header_top .material-icons{
   font-size: 20px;  
   color: white;
 }
-.header_category ul:first-child:hover .sub_menu{
+.header_category li:first-child:hover .sub_menu{
   display: block;
   z-index: 100;
 }
@@ -268,7 +268,7 @@ header .header_top .material-icons{
 }
 
 /* 오른쪽 고정 배지 */
-.badge_fix.{
+.badge_fix{
   position: relative;
 }
 .badge{
