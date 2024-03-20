@@ -29,7 +29,7 @@ header .header_top a{
 } 
 header .header_top .material-icons{
   position: absolute;
-  right: -70px;
+  right: 250px;
   font-size: 40px;
   color: wheat;
   cursor: pointer;
@@ -303,7 +303,7 @@ header .header_top .material-icons{
 }
 .todayitem .todayitem_container{
   display: flex;
-  border: 1px solid grey;
+  border: 1px solid #dedede;
 }
 .todayitem .todayitem_left{
   width: 75%;
@@ -312,17 +312,21 @@ header .header_top .material-icons{
 }
 .todayitem .todayitem_right{
   width: 25%;
-  border-left: 1px solid grey;
+  border-left: 1px solid #dedede;
 }
 .todayitem .todayitem_title{
   width: 100%;
   display: flex;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   background-color: #dedede;
 }
 .todayitem .todayitem_title li{
-  margin: 15px auto;
-  font-size: 12px;
+  width: 33.33%;
+  height: 53px;
+  font-size: 13px;
+  /* border: 1px solid black; */
+  text-align: center;
+  line-height: 53px;
 }
 .flexpurpose{
   display: flex;

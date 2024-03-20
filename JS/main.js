@@ -36,6 +36,10 @@ const titleBest = document.querySelector('.best');
 titleRecommand.addEventListener('click',function(){
   itemNewitem.classList.remove('active');
   itemBest.classList.remove('active');
+  titleRecommand.setAttribute('style','border: 1px solid black; border-bottom: none; background-color: white;');
+  titleNewitem.setAttribute('style','border-bottom: 1px solid black;');
+  titleBest.setAttribute('style','border-bottom: 1px solid black;');
+  // titleRecommand.setAttribute('style',"border-bottom : 1px solid white;");
   if (itemRecommand.classList.contains('active')) {
     
   } else {
@@ -45,6 +49,9 @@ titleRecommand.addEventListener('click',function(){
 titleNewitem.addEventListener('click',function(){
   itemRecommand.classList.remove('active');
   itemBest.classList.remove('active');
+  titleNewitem.setAttribute('style','border: 1px solid black; border-bottom: none; background-color: white;');
+  titleRecommand.setAttribute('style','border-bottom: 1px solid black;');
+  titleBest.setAttribute('style','border-bottom: 1px solid black;');
   if (itemNewitem.classList.contains('active')) {
     
   } else {
@@ -54,6 +61,9 @@ titleNewitem.addEventListener('click',function(){
 titleBest.addEventListener('click',function(){
   itemNewitem.classList.remove('active');
   itemRecommand.classList.remove('active'); 
+  titleBest.setAttribute('style','border: 1px solid black; border-bottom: none; background-color: white;');
+  titleNewitem.setAttribute('style','border-bottom: 1px solid black;');
+  titleRecommand.setAttribute('style','border-bottom: 1px solid black;');
   if (itemBest.classList.contains('active')) {
     
   } else {
