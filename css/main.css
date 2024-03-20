@@ -137,14 +137,18 @@ header .header_top .material-icons{
   font-weight: 700;
   font-size: 20px;
   display: flex;
+  position: relative;
+  z-index: 99;
 }
-.header_category ul{
+.header_category li{
+  cursor: pointer;
+}
+.header_category .header_category_main{
   width: 1100px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: relative; */
 }
 .header_category > ul >li{
   /* padding: auto; */
@@ -173,11 +177,72 @@ header .header_top .material-icons{
   /* margin-top: 11px; */
   border: 3px solid black;
 }
-.header_category .sub_menu a{
-  color: black;
-  padding: 15px;
-  z-index: 200;
+.header_category .sub_menu > li:hover{
+  background-color: #555;
 }
+.header_category .sub_menu li{
+  padding: 15px;
+  color: black;
+}
+.header_category .sub_menu_eti {
+  display: flex;
+  transition: 0.5s;
+}
+.header_category .sub_menu_hovertap{
+  width: 557px;
+  height: 350px;
+  position: absolute;
+  left: 194px;
+  top:0px;
+  font-size: 11px;
+}
+.header_category .sub_menu_eti:hover .sub_menu_hovertap {
+  background-color: white;
+  display: block;
+  display: flex;
+  /* background-color: blue; */
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+.header_category .sub_menu_eti:hover .sub_menu_hovertap li > a{
+  color: black;
+}
+.header_category .sub_menu_eti:hover .sub_menu_hovertap_first{
+  border-right: 1px solid #333;
+  width: 130px;
+}
+.header_category .sub_menu_eti:hover .sub_menu_hovertap_first li{
+  width: 100%;
+}
+.header_category .sub_menu_eti:hover .sub_menu_hovertap_first li:hover{
+  background-color: #888;
+  transition: 0.5s;
+}
+.header_category .sub_menu_eti:hover .sub_menu_hovertap_two{
+  width: 80%;
+}
+.header_category .sub_menu_eti:hover .sub_menu_hovertap_two div{
+  display: flex;
+  flex-wrap: wrap;
+}
+.header_category .sub_menu_eti:hover .sub_menu_hovertap_two div a{
+  padding: 10px;
+}
+.header_category .sub_menu_eti:hover .sub_menu_hovertap_two div:first-child,
+.header_category .sub_menu_eti:hover .sub_menu_hovertap_two div span{
+  width: 100%;
+}
+.header_category .sub_menu_eti:hover .sub_menu_hovertap_two div span{
+  font-size: 14px;
+  text-align: center;
+  padding: 5px;
+  color: royalblue;
+}
+.header_category .sub_menu_hovertap{
+  display: none;
+}
+
 
 /* 톡상담 */
 .kakaotalk_consult{
@@ -313,6 +378,11 @@ header .header_top .material-icons{
 .todayitem .todayitem_right{
   width: 25%;
   border-left: 1px solid #dedede;
+  position: relative;
+}
+.todayitem .todayitem_right .swiper-button-prev::after,
+.todayitem .todayitem_right .swiper-button-next::after{
+  display: none;
 }
 .todayitem .todayitem_title{
   width: 100%;

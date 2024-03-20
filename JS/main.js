@@ -19,6 +19,27 @@ new Swiper('.screen .swiper', {
   },
 }); 
 
+// 프로모션 수평 슬라이드 가능
+new Swiper('.todayitem_right .swiper', {
+  // Optional parameters
+  direction: 'horizontal', //수평 슬라이드(기본값)
+  loop: true, //반복 재생 여부, 1 -> 2 -> 3 -> 4 -> 다시 1
+  autoplay: { //자동 재생 여부 
+    delay: 2000 // 5초마다 슬라이드 바뀜(기본값 : 3000)
+  } ,
+  // slidesPerView: 1,//한 번에 보여줄 슬라이드 개수 (기본값:1)
+  // spaceBetween:10, //슬라이드 사이 여백(간격) px
+  // centeredSlides: true, //1번 슬라이드가 가운데 보이기
+  pagination: { //페이지 번호 사용
+    el : '.todayitem_right .swiper-pagination', //페이지 번호 요소 선택자
+    clickable : true,
+  },
+  navigation: { //슬라이드의 이전/다음 버튼 사용
+    nextEl: '.todayitem_right .swiper-button-next',
+    prevEl: '.todayitem_right .swiper-button-prev',
+  },
+}); 
+
 // 프로모션 섹션 토글 기능
 const screenEl = document.querySelector('.screen');
 
@@ -73,9 +94,10 @@ titleBest.addEventListener('click',function(){
 
 const sidebarFixed = document.querySelector('#sidebar_fix');
 window.addEventListener('scroll',function(){
+  // console.log(window.scrollY);
   if (window.scrollY >= 2800){
     sidebarFixed.style.position = 'fixed';
-    sidebarFixed.style.top = '30px';
+    sidebarFixed.style.top = '100px';
   } else {
     sidebarFixed.style.position = 'absolute';
   }
@@ -84,9 +106,18 @@ const badgeFixed = document.querySelector('.badge_fix');
 window.addEventListener('scroll',function(){
   if (window.scrollY >= 700){
     badgeFixed.style.position = 'fixed';
-    badgeFixed.style.top = '30px';
+    badgeFixed.style.top = '100px';
   } else {
     badgeFixed.style.position = 'absolute';
+  }
+});
+const category = document.querySelector('.header_category');
+window.addEventListener('scroll',function(){
+  if (window.scrollY >= 300){
+    category.style.position = 'fixed';
+    category.style.top = '0px';
+  } else {
+    category.style.position = 'relative';
   }
 });
 
