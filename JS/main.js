@@ -92,6 +92,21 @@ titleBest.addEventListener('click',function(){
   }
 });
 
+
+// 위의 것 간소화를 이렇게 가능
+// const tabBtns = document.querySelectorAll('.todayitem_title > li');
+// const tabContents = document.querySelectorAll('.todayitem_subtitle_parent > div')
+
+// tabBtns.forEach(function (tabBtn,index){
+//   tabBtn.addEventListener('click',function(){
+//     tabContents.forEach(function(tabContent){
+//       tabContent.classList.remove('active');
+//     });
+//     tabContents[index].classList.add('active');
+//   });
+// });
+
+
 const sidebarFixed = document.querySelector('#sidebar_fix');
 window.addEventListener('scroll',function(){
   // console.log(window.scrollY);

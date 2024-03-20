@@ -15,6 +15,54 @@ a{
   justify-content: center;
 } */
 
+/* 공통 스타일 */
+.item_brand{
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+  margin:5px 0;
+  overflow: hidden;
+}
+.item_name{
+  color: #222;
+  font-size: 15px;
+  font-weight: bold;
+  margin:10px 0;
+  overflow: hidden;
+}
+.item_ingredient{
+  color: #999;
+  font-size: 12px;
+  overflow: hidden;
+  margin: 5px 0;
+}
+.sale{
+  border-top: 1px solid grey;
+  margin: 10px 0;
+  padding-top: 15px;
+  display: flex;
+  position: relative;
+}
+.sale_text{
+  background-color: limegreen;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+}
+.sale_price{
+  width: 60%;
+  margin-left: 7px;
+}
+.sale_price_cost{
+  font-size: 12px;
+  text-decoration: line-through;
+  color: gray;
+}
+.sale_price_salecost{
+  font-size: 17px;
+  font-weight: bold;
+}
+
 /* Close 이미지라인 */
 header .header_top {
   width: 100%;
@@ -398,7 +446,7 @@ header .header_top .material-icons{
   text-align: center;
   line-height: 53px;
 }
-.flexpurpose{
+.todayitem_subtitle_recommand .flexpurpose{
   display: flex;
 }
 .todayitem_subtitle_parent{
@@ -412,52 +460,6 @@ header .header_top .material-icons{
 .todayitem_subtitle{
   width: 33.33%;
   padding: 20px;
-}
-.item_brand{
-  font-size: 12px;
-  font-weight: bold;
-  color: #888;
-  margin:5px 0;
-  overflow: hidden;
-}
-.item_name{
-  color: #222;
-  font-size: 15px;
-  font-weight: bold;
-  margin:10px 0;
-  overflow: hidden;
-}
-.item_ingredient{
-  color: #999;
-  font-size: 12px;
-  overflow: hidden;
-  margin: 5px 0;
-}
-.sale{
-  border-top: 1px solid grey;
-  margin: 10px 0;
-  padding-top: 15px;
-  display: flex;
-  position: relative;
-}
-.sale_text{
-  background-color: limegreen;
-  color: white;
-  padding: 5px;
-  font-size: 12px;
-}
-.sale_price{
-  width: 60%;
-  margin-left: 7px;
-}
-.sale_price_cost{
-  font-size: 12px;
-  text-decoration: line-through;
-  color: gray;
-}
-.sale_price_salecost{
-  font-size: 17px;
-  font-weight: bold;
 }
 .todayitem_subtitle_best.active,
 .todayitem_subtitle_newitem.active,
@@ -507,26 +509,26 @@ header .header_top .material-icons{
   width: 770px;
   padding: 20px;
 }
-.left_sub_container_top{
+.eti_main_container_left .left_sub_container_top{
   padding: 15px;
   border: var(--border);
   overflow: hidden;
 }
-.left_sub_container_top_img{
+.eti_main_container_left .left_sub_container_top_img{
   position: relative;
   top: -14px;
   left: -14px;
 }
 /* 위의 이미지 어떻게하면 정렬가능할지 여쭤보기 */
-.row_flex{
+.eti_main_container_left .row_flex{
   display: flex;
   padding: 23px;
 }
-.row_flex > li img{
+.eti_main_container_left .row_flex > li img{
   width: 110px;
   height: 110px;
 }
-.row_flex > ul {
+.eti_main_container_left .row_flex > ul {
   margin-left: 23px;
 }
 /* .eti_main_container_right .eti_sale ul{
@@ -541,21 +543,21 @@ header .header_top .material-icons{
 .eti_sale ul{
   width: 90%;
 } 
-.sale_etc{
+.eti_main_container_left .row_flex .sale_etc{
   display: flex;
   position: absolute;
   right: 0;
   bottom: 6px;
 }
-.right_sub_container_top,
-.right_sub_container_bottom
+.eti_main_container_right .right_sub_container_top,
+.eti_main_container_right .right_sub_container_bottom
 {
   display: flex;
 }
-.right_sub_container_bottom{
+.eti_main_container_right .right_sub_container_bottom{
   margin-top: 70px;
 }
-.right_sub_container_top_width33{
+.eti_main_container_right .right_sub_container_top_width33{
   width: 33.33%;
 }
 
