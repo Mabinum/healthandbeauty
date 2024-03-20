@@ -394,7 +394,6 @@ header .header_top .material-icons{
   right: -660px;
 }
 
-
 /* TODAY 추천상품 */
 .todayitem{
   margin: auto;
@@ -446,7 +445,7 @@ header .header_top .material-icons{
   text-align: center;
   line-height: 53px;
 }
-.todayitem_subtitle_recommand .flexpurpose{
+.todayitem_subtitle_parent .flexpurpose{
   display: flex;
 }
 .todayitem_subtitle_parent{
@@ -524,9 +523,10 @@ header .header_top .material-icons{
   display: flex;
   padding: 23px;
 }
-.eti_main_container_left .row_flex > li img{
+.eti_main_container_left .row_flex_img img{
   width: 110px;
   height: 110px;
+  padding-right: 15px;
 }
 .eti_main_container_left .row_flex > ul {
   margin-left: 23px;

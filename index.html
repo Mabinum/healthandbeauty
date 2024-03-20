@@ -28,7 +28,7 @@
   <!-- 구글 아이콘 -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <!-- SWIPER CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 <body>
   <!-- 헤더라인 -->
@@ -480,47 +480,44 @@
           </div>
         </div>
       </div>
+      <div class="todayitem_right">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="./image/15.jpg" class="btn">
+                <img src="./image/right_ban01.png" alt="소고기볶음밥">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./image/15.jpg" class="btn">
+                <img src="/image/right_ban02.png" alt="생닭가슴살">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./image/15.jpg" class="btn">
+                <img src="/image/right_ban04.png" alt="현미닭가슴살">
+              </a>
+            </div>
+          </div>
+        </div>
   
-  <!-- Today 아이템 오른쪽 슬라이드 -->
-  <section class="todayitem_right">
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <a href="./image/15.jpg" class="btn">
-            <img src="./image/right_ban01.png" alt="소고기볶음밥">
+        <div class="swiper-pagination"></div>
+  
+        <div class="swiper-button-prev">
+          <a href="javascript:void(0)" class="btn">
+            <img src="/image/ban_right_left.gif" alt="왼쪽클릭">
           </a>
         </div>
-        <div class="swiper-slide">
-          <a href="./image/15.jpg" class="btn">
-            <img src="/image/right_ban02.png" alt="생닭가슴살">
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="./image/15.jpg" class="btn">
-            <img src="/image/right_ban04.png" alt="현미닭가슴살">
+        <div class="swiper-button-next">
+          <a href="javascript:void(0)" class="btn">
+            <img src="/image/ban_right_right.gif" alt="오른쪽클릭">
           </a>
         </div>
       </div>
     </div>
-
-    <div class="swiper-pagination"></div>
-
-    <div class="swiper-button-prev">
-      <a href="javascript:void(0)" class="btn">
-        <img src="/image/ban_right_left.gif" alt="왼쪽클릭">
-      </a>
-    </div>
-    <div class="swiper-button-next">
-      <a href="javascript:void(0)" class="btn">
-        <img src="/image/ban_right_right.gif" alt="오른쪽클릭">
-      </a>
-    </div>
-  </section>
-
-
-    </div class="todayitem_container">
+    <!-- Today 아이템 오른쪽 슬라이드 -->
   </section>
 
   <!-- 원하는대로 원하는만큼 구매주소 링크 이미지-->
@@ -572,34 +569,38 @@
           </div>
           <div>
             <ul class="row_flex">
-              <li><img src="./image/1000001928_main_091.jpg" alt="웰베이커리"></li>
-              <ul>
-                <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                <li class="item_name" style="font-size: 12px;"><h1>웰베이커리/먹고 반할 번/프로틴 치아바타/엄지붕어빵 1팩 골라담기</h1></li>
-                <li class="sale" style="position: relative;">
-                  <div class="sale_price">5,200원</div>
-                  <div class="sale_etc" style="position: absolute; right: 0;">
-                    <img src="./image/pro_cart.gif" alt="카트">
-                    <img src="./image/pro_zoom.gif" alt="줌">
-                  </div>
-                </li>
-              </ul>
+              <li class="row_flex_img"><img src="./image/1000001928_main_091.jpg" alt="웰베이커리"></li>
+              <li>
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name" style="font-size: 12px;"><h1>웰베이커리/먹고 반할 번/프로틴 치아바타/엄지붕어빵 1팩 골라담기</h1></li>
+                  <li class="sale" style="position: relative;">
+                    <div class="sale_price">5,200원</div>
+                    <div class="sale_etc" style=";">
+                      <img src="./image/pro_cart.gif" alt="카트">
+                      <img src="./image/pro_zoom.gif" alt="줌">
+                    </div>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div>
             <ul class="row_flex">
-              <li><img src="./image/1000001625_main_07.jpg" alt="치킨/소시지/스테이크"></li>
-              <ul>
-                <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                <li class="item_name" style="font-size: 12px;"><h1>치킨/소시지/스테이크/볼/탕수닭 1팩 골라담기</h1></li>
-                <li class="sale" style="position: relative;">
-                  <div class="sale_price">1,200원</div>
-                  <div class="sale_etc" style="position: absolute; right: 0;">
-                    <img src="./image/pro_cart.gif" alt="카트">
-                    <img src="./image/pro_zoom.gif" alt="줌">
-                  </div>
-                </li>
-              </ul>
+              <li class="row_flex_img"><img src="./image/1000001625_main_07.jpg" alt="치킨/소시지/스테이크"></li>
+              <li>
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name" style="font-size: 12px;"><h1>치킨/소시지/스테이크/볼/탕수닭 1팩 골라담기</h1></li>
+                  <li class="sale" style="position: relative;">
+                    <div class="sale_price">1,200원</div>
+                    <div class="sale_etc" style="position: absolute; right: 0;">
+                      <img src="./image/pro_cart.gif" alt="카트">
+                      <img src="./image/pro_zoom.gif" alt="줌">
+                    </div>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -737,18 +738,20 @@
           </div>
           <div>
             <ul class="row_flex">
-              <li><img src="./image/1000001928_main_091.jpg" alt="웰베이커리/먹고 반할 번/프로틴 치아바타/엄지붕어빵 1팩 골라담기"></li>
-              <ul>
-                <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                <li class="item_name" style="font-size: 12px;"><h1>웰베이커리/먹고 반할 번/프로틴 치아바타/엄지붕어빵 1팩 골라담기</h1></li>
-                <li class="sale" style="position: relative;">
-                  <div class="sale_price">5,900원</div>
-                  <div class="sale_etc" style="position: absolute; right: 0;;">
-                    <img src="./image/pro_cart.gif" alt="카트">
-                    <img src="./image/pro_zoom.gif" alt="줌">
-                  </div>
-                </li>
-              </ul>
+              <li class="row_flex_img"><img src="./image/1000001928_main_091.jpg" alt="웰베이커리/먹고 반할 번/프로틴 치아바타/엄지붕어빵 1팩 골라담기"></li>
+              <li>
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name" style="font-size: 12px;"><h1>웰베이커리/먹고 반할 번/프로틴 치아바타/엄지붕어빵 1팩 골라담기</h1></li>
+                  <li class="sale" style="position: relative;">
+                    <div class="sale_price">5,900원</div>
+                    <div class="sale_etc" style="position: absolute; right: 0;;">
+                      <img src="./image/pro_cart.gif" alt="카트">
+                      <img src="./image/pro_zoom.gif" alt="줌">
+                    </div>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -891,34 +894,38 @@
           </div>
           <div>
             <ul class="row_flex">
-              <li><img src="./image/1000001884_main_090.jpg" alt=숯불갈비맛닭""></li>
-              <ul>
-                <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                <li class="item_name" style="font-size: 12px;"><h1>더 부드러운 안심 닭 숯불갈비맛</h1></li>
-                <li class="sale" style="position: relative;">
-                  <div class="sale_price">3,000원</div>
-                  <div class="sale_etc" style="position: absolute; right: 0;;">
-                    <img src="./image/pro_cart.gif" alt="카트">
-                    <img src="./image/pro_zoom.gif" alt="줌">
-                  </div>
-                </li>
-              </ul>
+              <li class="row_flex_img"><img src="./image/1000001884_main_090.jpg" alt="숯불갈비맛닭"></li>
+              <li>
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name" style="font-size: 12px;"><h1>더 부드러운 안심 닭 숯불갈비맛</h1></li>
+                  <li class="sale" style="position: relative;">
+                    <div class="sale_price">3,000원</div>
+                    <div class="sale_etc" style="position: absolute; right: 0;;">
+                      <img src="./image/pro_cart.gif" alt="카트">
+                      <img src="./image/pro_zoom.gif" alt="줌">
+                    </div>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div>
             <ul class="row_flex">
-              <li><img src="./image/1000001888_main_06.jpg" alt="탄두리맛닭"></li>
-              <ul>
-                <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                <li class="item_name" style="font-size: 12px;"><h1>더 부드러운 리얼 탄두리맛</h1></li>
-                <li class="sale" style="position: relative;">
-                  <div class="sale_price">3,000원</div>
-                  <div class="sale_etc" style="position: absolute; right: 0;;">
-                    <img src="./image/pro_cart.gif" alt="카트">
-                    <img src="./image/pro_zoom.gif" alt="줌">
-                  </div>
-                </li>
-              </ul>
+              <li class="row_flex_img"><img src="./image/1000001888_main_06.jpg" alt="탄두리맛닭"></li>
+              <li>
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name" style="font-size: 12px;"><h1>더 부드러운 리얼 탄두리맛</h1></li>
+                  <li class="sale" style="position: relative;">
+                    <div class="sale_price">3,000원</div>
+                    <div class="sale_etc" style="position: absolute; right: 0;;">
+                      <img src="./image/pro_cart.gif" alt="카트">
+                      <img src="./image/pro_zoom.gif" alt="줌">
+                    </div>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -1061,34 +1068,38 @@
           </div>
           <div>
             <ul class="row_flex">
-              <li><img src="./image/1000000383_main_025.jpg" alt="닭가슴살스테이크"></li>
-              <ul>
-                <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                <li class="item_name" style="font-size: 12px;"><h1>치닭스 닭가슴살 스테이크</h1></li>
-                <li class="sale" style="position: relative;">
-                  <div class="sale_price">15,000원</div>
-                  <div class="sale_etc" style="position: absolute; right: 0;;">
-                    <img src="./image/pro_cart.gif" alt="카트">
-                    <img src="./image/pro_zoom.gif" alt="줌">
-                  </div>
-                </li>
-              </ul>
+              <li class="row_flex_img"><img src="./image/1000000383_main_025.jpg" alt="닭가슴살스테이크"></li>
+              <li>
+                <ul>
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name" style="font-size: 12px;"><h1>치닭스 닭가슴살 스테이크</h1></li>
+                  <li class="sale" style="position: relative;">
+                    <div class="sale_price">15,000원</div>
+                    <div class="sale_etc" style="position: absolute; right: 0;;">
+                      <img src="./image/pro_cart.gif" alt="카트">
+                      <img src="./image/pro_zoom.gif" alt="줌">
+                    </div>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div>
             <ul class="row_flex">
-              <li><img src="./image/1000001033_main_09.jpg" alt="탱탱볼치즈맛"></li>
-              <ul style="width: 100%;">
-                <li class="item_brand"><h4>헬스앤뷰티</h4></li>
-                <li class="item_name" style="font-size: 12px;"><h1>탱탱볼 치즈맛</h1></li>
-                <li class="sale" style="position: relative;">
-                  <div class="sale_price">9,000원</div>
-                  <div class="sale_etc" style="position: absolute; right: 0;">
-                    <img src="./image/pro_cart.gif" alt="카트">
-                    <img src="./image/pro_zoom.gif" alt="줌">
-                  </div>
-                </li>
-              </ul>
+              <li class="row_flex_img"><img src="./image/1000001033_main_09.jpg" alt="탱탱볼치즈맛"></li>
+              <li>
+                <ul style="width: 100%;">
+                  <li class="item_brand"><h4>헬스앤뷰티</h4></li>
+                  <li class="item_name" style="font-size: 12px;"><h1>탱탱볼 치즈맛</h1></li>
+                  <li class="sale" style="position: relative;">
+                    <div class="sale_price">9,000원</div>
+                    <div class="sale_etc" style="position: absolute; right: 0;">
+                      <img src="./image/pro_cart.gif" alt="카트">
+                      <img src="./image/pro_zoom.gif" alt="줌">
+                    </div>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
